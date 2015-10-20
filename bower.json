@@ -1,0 +1,22 @@
+{
+  "name": "shownotes-theme",
+  "version": "0.1.0",
+  "authors": [
+    "Trevor Fountain <trevor@texasexpat.net>"
+  ],
+  "description": "Styling components for ShowNotes.io",
+  "main": "dist/css/shownotes-theme.css",
+  "keywords": [
+    "themes",
+    "css framework"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {}
+}

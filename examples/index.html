@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" href="./css/shownotes-theme.css" />
+    <link rel="shortcut icon" href="./assets/favicon.png" />
+    <style>
+      body {
+        padding: 16px;
+      }
+      .logo {
+        width: 96px;
+        margin: 16px;
+        float: left;
+        position: relative;
+        top: 32px
+      }
+      .header {
+        margin-top: -32px;
+        text-align: right;
+        border-bottom: 2px solid #f0f0f0;
+      }
+      .header h1, .header h3 {
+        margin: 0;
+      }
+      .header h1 {
+        position: relative;
+        top: 24px;
+      }
+      .header h3 {
+        font-size: 24px;
+        font-family: "Quicksand";
+        text-shadow: 0 3px 1px #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class='container'>
+      <div class='header'>
+        <img class="logo" src="favicon.svg" />
+        <h1>TalkRadio</h1>
+        <h3>Minimal Styling for responsive sites</h3>
+      </div>
+      <div class='clearfix'>&nbsp;</div>
+
+      <h2>Form Elements</h2>
+      <h3>Buttons</h3>
+      <h4>Default</h4>
+      <button class="sn-button sn-intent-default">Default</button>
+      <button class="sn-button sn-intent-info">Info</button>
+      <button class="sn-button sn-intent-success">Success</button>
+      <button class="sn-button sn-intent-warning">Warning</button>
+      <button class="sn-button sn-intent-danger">Danger</button>
+
+      <h4>Disabled</h4>
+
+      <button class="sn-button sn-button sn-intent-default" disabled>Default</button>
+      <button class="sn-button sn-button sn-intent-info" disabled>Info</button>
+      <button class="sn-button sn-button sn-intent-success" disabled>Success</button>
+      <button class="sn-button sn-button sn-intent-warning" disabled>Warning</button>
+      <button class="sn-button sn-button sn-intent-danger" disabled>Danger</button>
+
+      <h4>Small</h4>
+
+      <button class="sn-button sn-button-small sn-intent-default">Default</button>
+      <button class="sn-button sn-button-small sn-intent-info">Info</button>
+      <button class="sn-button sn-button-small sn-intent-success">Success</button>
+      <button class="sn-button sn-button-small sn-intent-warning">Warning</button>
+      <button class="sn-button sn-button-small sn-intent-danger">Danger</button>
+
+      <h2>Input</h2>
+      <form class="sn-form">
+        <div class="sn-form-row">
+          <label>
+            Normal
+            <input type="text" class="sn-input" placeholder="Placeholder" />
+          </label>
+        </div>
+        <div class="sn-form-row">
+          <label>
+            Small
+            <input type="text" class="sn-input sn-input-small" placeholder="Placeholder" />
+          </label>
+        </div>
+      </form>
+
+      <h2>Typography</h2>
+      <h4>Normal text</h4>
+      <p>Nunc eget velit commodo, <strong>porta metus non</strong>, <em>molestie ligula</em>. Nullam enim nisi, <strong><em>lobortis sit amet odio id</em></strong>, sollicitudin hendrerit sapien.</p>
+      <h4>Large text</h4>
+      <p class='text-large'>In leo purus, consequat eget faucibus id, congue at velit.</p>
+      <h4>Small text</h4>
+      <p class="text-small">In nec magna a felis iaculis suscipit quis eget massa. Aenean semper lectus eu risus auctor vulputate. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce non ultrices justo. Maecenas dui justo, posuere ut volutpat et, luctus non turpis. Nulla augue odio, porttitor sed ipsum non, eleifend ultricies tellus. Fusce facilisis est in ex mattis tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc ut ante vehicula, viverra nunc et, facilisis ipsum. Duis malesuada est vitae venenatis egestas. Maecenas in scelerisque nunc, luctus tempor mi. Sed urna ligula, efficitur ac iaculis id, hendrerit sed orci.</p>
+    </div>
+  </body>
+</html>
