@@ -5,7 +5,7 @@
     "Trevor Fountain <trevor@texasexpat.net>"
   ],
   "description": "Styling components for ShowNotes.io",
-  "main": "dist/css/shownotes-theme.css",
+  "main": "dist/shownotes-theme.css",
   "keywords": [
     "themes",
     "css framework"

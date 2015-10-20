@@ -14,21 +14,21 @@ gulp.task('less', function () {
     .pipe(less({
       paths: [ './src/less/*.less' ]
     }))
-    .pipe(rename({dirname: "css"}))
+    .pipe(rename({dirname: "."}))
     .pipe(gulp.dest('./dist/'))
     .pipe(reload({stream: true}));
 });
 
 gulp.task("images", function () {
   return gulp.src(["./src/img/*"])
-  .pipe(rename({dirname: "assets"}))
+  .pipe(rename({dirname: "."}))
   .pipe(gulp.dest('./dist/'))
   .pipe(reload({stream: true}));
 })
 
 gulp.task("fonts", function () {
   return gulp.src(["./src/fonts/*/*.woff", "./src/fonts/*/*.woff2", "./src/fonts/*/*.ttf", "./src/fonts/*/*.eot", "./src/fonts/*/*.svg"])
-  .pipe(rename({dirname: "css/fonts/"}))
+  .pipe(rename({dirname: "fonts/"}))
   .pipe(gulp.dest('./dist/'))
   .pipe(reload({stream: true}));
 })
@@ -51,7 +51,7 @@ gulp.task('serve-dev', function() {
     // Reload browser-sync on change
   browserSync.init({
     server: {
-      baseDir: ["./dist", "./bower_components", "./examples", "./dist/assets"]
+      baseDir: ["./dist", "./bower_components", "./examples"]
     }
   });
 
