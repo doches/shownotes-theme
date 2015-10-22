@@ -3,13 +3,13 @@
 body {
   background-color: @white;
 
-  font-family: @quicksand-family;
+  font-family: @text-family;
   font-size: @font-size;
   color: @grey1;
 }
 
 h1,h2,h3,h4,h5 {
-  font-family: @edmondsans-family;
+  font-family: @title-family;
   font-weight: @font-weight-bold;
 
   color: @grey2;
@@ -55,7 +55,7 @@ h5 {
 
 .sn-button {
   padding: @grid-size/2 @grid-size;
-  font-family: @edmondsans-family;
+  font-family: @title-family;
   text-transform: uppercase;
   font-size: @font-size-small;
   background-color: @white;
@@ -71,7 +71,7 @@ h5 {
     margin: @grid-size 0;
   }
   .sn-input {
-    font-family: @quicksand-family;
+    font-family: @text-family;
     padding: @grid-size/2 @grid-size;
     font-size: @font-size;
     border-radius: @border-radius;
@@ -230,8 +230,5 @@ h5 {
 
 }
 
-@quicksand-family: "Quicksand", "Helvetica", sans-serif;
-@edmondsans-family: "Edmond-Sans", "Helvetica", sans-serif;
-
-.quicksand { font-family: @quicksand-family; }
-.edmondsans { font-family: @edmondsans-family; }
+.text { font-family: @text-family; }
+.title { font-family: @title-family; }
