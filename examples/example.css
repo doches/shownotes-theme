@@ -1,0 +1,141 @@
+body {
+  padding: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.logo {
+  width: 96px;
+  margin: 16px;
+  float: left;
+  position: relative;
+  top: 32px;
+}
+.header {
+  margin-top: -32px;
+  text-align: right;
+  border-bottom: 2px solid #dbdbe4;
+}
+.header h1,
+.header h3 {
+  margin: 0;
+}
+.header h1 {
+  position: relative;
+  top: 24px;
+}
+.header h3 {
+  font-size: 24px;
+  font-family: "Quicksand", "Helvetica", sans-serif;
+  text-shadow: 0 3px 1px #fff;
+}
+.swatch {
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  float: left;
+}
+.swatch .color-name,
+.swatch .color-code {
+  display: block;
+  font-size: 12px;
+  font-family: sans-serif;
+  color: #ffffff;
+}
+.swatch .color-name {
+  margin: 12px 0;
+  opacity: 0.5;
+}
+.swatch-row {
+  clear: both;
+  display: block;
+}
+.red1 {
+  background-color: #E55B5D;
+}
+.red2 {
+  background-color: #D85658;
+}
+.red3 {
+  background-color: #BE4C4E;
+}
+.red4 {
+  background-color: #983D3E;
+}
+.red5 {
+  background-color: #582324;
+}
+.blue1 {
+  background-color: #546EF1;
+}
+.blue2 {
+  background-color: #5068E4;
+}
+.blue3 {
+  background-color: #465BC8;
+}
+.blue4 {
+  background-color: #3A4BA4;
+}
+.blue5 {
+  background-color: #232E64;
+}
+.purple1 {
+  background-color: #CA5EFB;
+}
+.purple2 {
+  background-color: #C059EE;
+}
+.purple3 {
+  background-color: #AA4FD2;
+}
+.purple4 {
+  background-color: #8D41AE;
+}
+.purple5 {
+  background-color: #59296E;
+}
+.orange1 {
+  background-color: #FEA256;
+}
+.orange2 {
+  background-color: #F19A52;
+}
+.orange3 {
+  background-color: #D58849;
+}
+.orange4 {
+  background-color: #B1713C;
+}
+.orange5 {
+  background-color: #714927;
+}
+.yellow1 {
+  background-color: #F3D668;
+}
+.yellow2 {
+  background-color: #E6CB63;
+}
+.yellow3 {
+  background-color: #CAB357;
+}
+.yellow4 {
+  background-color: #A69348;
+}
+.yellow5 {
+  background-color: #665A2C;
+}
+.green1 {
+  background-color: #6ED769;
+}
+.green2 {
+  background-color: #67CA63;
+}
+.green3 {
+  background-color: #59AE55;
+}
+.green4 {
+  background-color: #468A44;
+}
+.green5 {
+  background-color: #264A25;
+}

@@ -33,7 +33,17 @@ gulp.task("fonts", function () {
   .pipe(reload({stream: true}));
 })
 
-gulp.task('dev', ['build', 'serve-dev']);
+gulp.task('example-less', function () {
+  return gulp.src(['./examples/*.less'])
+    .pipe(less({
+      paths: [ './src/less/*.less' ]
+    }))
+    .pipe(rename({dirname: "."}))
+    .pipe(gulp.dest('./examples/'))
+    .pipe(reload({stream: true}));
+});
+
+gulp.task('dev', ['build', 'example-less', 'serve-dev']);
 
 gulp.task("dist", function(callback) {
   runSequence("build", callback);
@@ -47,6 +57,8 @@ gulp.task("build", function(callback) {
 gulp.task('serve-dev', function() {
   gulp.watch(['src/**/*.less'], ['less']);
   gulp.watch(['src/**/*'], ["images"]);
+
+  gulp.watch(['examples/**/*.less'], ['example-less']);
 
     // Reload browser-sync on change
   browserSync.init({
