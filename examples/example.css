@@ -26,7 +26,7 @@ body {
 .header h3 {
   font-size: 24px;
   font-family: "Quicksand", "Helvetica", sans-serif;
-  text-shadow: 0 3px 1px #fff;
+  font-weight: 200;
 }
 .swatch {
   width: 64px;

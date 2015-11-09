@@ -1,25 +1,24 @@
 @import "variables.less";
 
 body {
-  background-color: @white;
+  background-color: @grey1;
 
   font-family: @text-family;
   font-size: @font-size;
-  color: @grey1;
+  color: @grey9;
 }
 
 h1,h2,h3,h4,h5 {
   font-family: @title-family;
   font-weight: @font-weight-bold;
 
-  color: @grey2;
+  color: @white;
   margin: @grid-size 0;
   padding: 0;
 }
 
 h1 {
   font-size: 96px;
-  text-shadow: 4px 6px 0px fadeout(@grey1, 90%);
   color: @red2;
 }
 h2 {
@@ -58,10 +57,10 @@ h5 {
   font-family: @title-family;
   text-transform: uppercase;
   font-size: @font-size-small;
-  background-color: @white;
+  background-color: @grey2;
   border-radius: @border-radius;
   border: 2px solid @grey2;
-  color: @grey2;
+  color: @white;
 
   transition: all @transition-delay ease-in-out;
 }
@@ -91,31 +90,29 @@ h5 {
 .sn-intent-info, .sn-intent-warning, .sn-intent-danger, .sn-intent-success, .sn-intent-invert {
   color: @white;
 }
-.sn-button.sn-intent-info { border-color: @blue2; color: @blue2; }
-.sn-button.sn-intent-warning { border-color: @orange2; color: @orange2; }
-.sn-button.sn-intent-danger { border-color: @red2; color: @red2; }
-.sn-button.sn-intent-success { border-color: @green2; color: @green2; }
-.sn-button.sn-intent-invert { border-color: @grey2; color: @grey2; }
-
-.sn-button:disabled { border-color: lighten(@grey2, 50%); color: lighten(@grey2, 50%); }
-.sn-button:disabled.sn-intent-info { border-color: lighten(@blue2, 30%); color: lighten(@blue2, 30%); }
-.sn-button:disabled.sn-intent-warning { border-color: lighten(@orange2, 30%); color: lighten(@orange2, 30%); }
-.sn-button:disabled.sn-intent-danger { border-color: lighten(@red2, 30%); color: lighten(@red2, 30%); }
-.sn-button:disabled.sn-intent-success { border-color: lighten(@green2, 30%); color: lighten(@green2, 30%); }
-.sn-button:disabled.sn-intent-invert { border-color: lighten(@grey2, 30%); color: lighten(@grey2, 30%); }
+.sn-button.sn-intent-info { border-color: @blue2; background-color: @blue2; }
+.sn-button.sn-intent-warning { border-color: @orange2; background-color: @orange2; }
+.sn-button.sn-intent-danger { border-color: @red2; background-color: @red2; }
+.sn-button.sn-intent-success { border-color: @green2; background-color: @green2; }
+.sn-button.sn-intent-invert { border-color: @grey2; background-color: @grey2; }
 
 .sn-button-active, .sn-button:hover {
-  background-color: @grey2;
+  background-color: @grey1;
   color: @white;
   transition: all @transition-delay ease-in-out;
 }
-.sn-button-active.sn-intent-info, .sn-button.sn-intent-info:hover { background-color: @blue2; }
-.sn-button-active.sn-intent-warning, .sn-button.sn-intent-warning:hover { background-color: @orange2; }
-.sn-button-active.sn-intent-danger, .sn-button.sn-intent-danger:hover { background-color: @red2; }
-.sn-button-active.sn-intent-success, .sn-button.sn-intent-success:hover { background-color: @green2; }
-.sn-button-active.sn-intent-invert, .sn-button.sn-intent-invert:hover { background-color: @grey2; }
+.sn-button-active.sn-intent-info, .sn-button.sn-intent-info:hover { background-color: @blue3; }
+.sn-button-active.sn-intent-warning, .sn-button.sn-intent-warning:hover { background-color: @orange3; }
+.sn-button-active.sn-intent-danger, .sn-button.sn-intent-danger:hover { background-color: @red3; }
+.sn-button-active.sn-intent-success, .sn-button.sn-intent-success:hover { background-color: @green3; }
+.sn-button-active.sn-intent-invert, .sn-button.sn-intent-invert:hover { background-color: @grey3; }
 
-.sn-button:disabled { background-color: @white !important; }
+.sn-button:disabled { border-color: darken(@grey2, 50%); background-color: darken(@grey2, 50%); color: fadeout(@white, 75%); }
+.sn-button:disabled.sn-intent-info { border-color: darken(@blue2, 30%); background-color: darken(@blue2, 30%); }
+.sn-button:disabled.sn-intent-warning { border-color: darken(@orange2, 30%); background-color: darken(@orange2, 30%); }
+.sn-button:disabled.sn-intent-danger { border-color: darken(@red2, 30%); background-color: darken(@red2, 30%); }
+.sn-button:disabled.sn-intent-success { border-color: darken(@green2, 30%); background-color: darken(@green2, 30%); }
+.sn-button:disabled.sn-intent-invert { border-color: darken(@grey2, 30%); background-color: lighten(@grey2, 30%); }
 
 /* Fonts */
 /* Quicksand */
