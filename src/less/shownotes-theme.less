@@ -6,6 +6,8 @@ body {
   font-family: @text-family;
   font-size: @font-size;
   color: @grey9;
+
+  .readable;
 }
 
 h1,h2,h3,h4,h5 {
@@ -68,13 +70,24 @@ h5 {
 .sn-form {
   .sn-form-row {
     margin: @grid-size 0;
+
+    .sn-button {
+      position: relative;
+      top: -3px;
+      padding: @grid-size/2+2 @grid-size;
+    }
+
+    .sn-button-small {
+      top: -1px;
+      padding: @grid-size/2-2 @grid-size @grid-size/2-3;
+    }
   }
   .sn-input {
     font-family: @text-family;
     padding: @grid-size/2 @grid-size;
     font-size: @font-size;
     border-radius: @border-radius;
-    border: 2px solid @grey8;
+    border: 2px solid @grey9;
   }
   .sn-input-small {
     font-size: @font-size-small;

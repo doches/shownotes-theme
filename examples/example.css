@@ -1,3 +1,8 @@
+.readable {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
 body {
   padding: 16px;
   max-width: 800px;
@@ -13,7 +18,7 @@ body {
 .header {
   margin-top: -32px;
   text-align: right;
-  border-bottom: 2px solid #dbdbe4;
+  border-bottom: 1px solid #8585a1;
 }
 .header h1,
 .header h3 {
@@ -138,4 +143,52 @@ body {
 }
 .green5 {
   background-color: #264A25;
+}
+.grey1 {
+  background-color: #272733;
+}
+.grey2 {
+  background-color: #3d3d50;
+}
+.grey3 {
+  background-color: #54546c;
+}
+.grey4 {
+  background-color: #6a6a89;
+}
+.grey5 {
+  background-color: #8585a1;
+}
+.grey6 {
+  background-color: #a2a2b7;
+}
+.grey6 .color-name {
+  color: #111116;
+}
+.grey7 {
+  background-color: #bfbfcd;
+}
+.grey7 .color-name {
+  color: #111116;
+}
+.grey8 {
+  background-color: #dbdbe4;
+}
+.grey8 .color-name {
+  color: #111116;
+}
+.grey9 {
+  background-color: #f8f8fa;
+}
+.grey9 .color-name {
+  color: #111116;
+}
+.black {
+  background-color: #111116;
+}
+.white {
+  background-color: #ffffff;
+}
+.white .color-name {
+  color: #111116;
 }

@@ -1,8 +1,16 @@
+.readable {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
 body {
   background-color: #272733;
   font-family: "Quicksand", "Helvetica", sans-serif;
   font-size: 18px;
   color: #f8f8fa;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
 }
 h1,
 h2,
@@ -59,12 +67,21 @@ h5 {
 .sn-form .sn-form-row {
   margin: 16px 0;
 }
+.sn-form .sn-form-row .sn-button {
+  position: relative;
+  top: -3px;
+  padding: 10px 16px;
+}
+.sn-form .sn-form-row .sn-button-small {
+  top: -1px;
+  padding: 6px 16px 5px;
+}
 .sn-form .sn-input {
   font-family: "Quicksand", "Helvetica", sans-serif;
   padding: 8px 16px;
   font-size: 18px;
   border-radius: 4px;
-  border: 2px solid #dbdbe4;
+  border: 2px solid #f8f8fa;
 }
 .sn-form .sn-input-small {
   font-size: 14px;
