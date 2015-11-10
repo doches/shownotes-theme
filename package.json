@@ -1,6 +1,6 @@
 {
   "name": "shownotes-theme",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "description": "Styling components for ShowNotes.io",
   "main": "gulpfile.js",
   "dependencies": {},
