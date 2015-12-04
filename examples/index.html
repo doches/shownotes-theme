@@ -18,7 +18,26 @@
       </div>
       <div class='clearfix'>&nbsp;</div>
 
+      <h2>Usage</h2>
+      <h4>In your Terminal:</h4>
+      <pre>
+bower install ssh://git@github.com/doches/shownotes-theme.git --save</pre>
+      <h4>In your less:</h4>
+      <pre>
+@import "../../bower_components/shownotes-theme/src/less/variables.less";
+
+body {
+  font-family: @text-family;
+  padding: @grid-size;
+
+  // and so on...
+}</pre>
       <h2>Colours</h2>
+      <p>Colours are exported as LESS variables; use 'em as you would hex codes. Example:</p>
+      <pre>
+h1 {
+  color: @red2;
+}</pre>
       <div class='swatch-row'>
         <div class='swatch red1'><span class='color-name'>red1</span><span class='color-code'>#E55B5D</span></div>
         <div class='swatch red2'><span class='color-name'>red2</span><span class='color-code'>#D85658</span></div>
@@ -65,13 +84,13 @@
         <div class='swatch grey1'><span class='color-name'>grey1</span></div>
         <div class='swatch grey2'><span class='color-name'>grey2</span></div>
         <div class='swatch grey3'><span class='color-name'>grey3</span></div>
-      </div>
-      <div class='swatch-row'>
         <div class='swatch grey4'><span class='color-name'>grey4</span></div>
         <div class='swatch grey5'><span class='color-name'>grey5</span></div>
-        <div class='swatch grey6'><span class='color-name'>grey6</span></div>
       </div>
       <div class='swatch-row'>
+      </div>
+      <div class='swatch-row'>
+        <div class='swatch grey6'><span class='color-name'>grey6</span></div>
         <div class='swatch grey7'><span class='color-name'>grey7</span></div>
         <div class='swatch grey8'><span class='color-name'>grey8</span></div>
         <div class='swatch grey9'><span class='color-name'>grey9</span></div>
@@ -84,6 +103,9 @@
 
       <h2>Form Elements</h2>
       <h3>Buttons</h3>
+      <p>Apply the <code>sn-button</code> class to your buttons or links for shared button styling, plus an optional intent class for custom colours.</p>
+      <pre>
+&lt;button class="sn-button sn-intent-success"&gt;Submit&lt;/button&gt;</pre>
       <h4>Default</h4>
       <button class="sn-button sn-intent-default">Default</button>
       <button class="sn-button sn-intent-info">Info</button>
@@ -100,7 +122,7 @@
       <button class="sn-button sn-intent-danger" disabled>Danger</button>
 
       <h4>Small</h4>
-
+      <p>Add <code>class="sn-button-small"</code> for slightly smaller buttons.</p>
       <button class="sn-button sn-button-small sn-intent-default">Default</button>
       <button class="sn-button sn-button-small sn-intent-info">Info</button>
       <button class="sn-button sn-button-small sn-intent-success">Success</button>
@@ -108,6 +130,17 @@
       <button class="sn-button sn-button-small sn-intent-danger">Danger</button>
 
       <h2>Input</h2>
+      <p>Apply the <code>sn-form</code> class to your form, then nest everything inside <code>sn-form-row</code> to keep everything on a common baseline.</p>
+      <pre>
+&lt;form class="sn-form"&gt;
+  &lt;div class="sn-form-row"&gt;
+    &lt;label&gt;
+      Normal
+      &lt;input type="text" class="sn-input" placeholder="Placeholder" /&gt;
+      &lt;button class='sn-button sn-intent-success'&gt;Submit&lt;/button&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</pre>
       <form class="sn-form">
         <div class="sn-form-row">
           <label>
@@ -129,8 +162,9 @@
       <h4>Normal text</h4>
       <p>Nunc eget velit commodo, <strong>porta metus non</strong>, <em>molestie ligula</em>. Nullam enim nisi, <strong><em>lobortis sit amet odio id</em></strong>, sollicitudin hendrerit sapien.</p>
       <h4>Large text</h4>
-      <p class='text-large'>In leo purus, consequat eget faucibus id, congue at velit.</p>
+      <p class='text-large'>Use the <code>text-large</code> class to get clean, large copy. In leo purus, consequat eget faucibus id, congue at velit.</p>
       <h4>Small text</h4>
+      <p class="text-small">Similarly, use <code>text-small</code> for the fine print.</p>
       <p class="text-small">In nec magna a felis iaculis suscipit quis eget massa. Aenean semper lectus eu risus auctor vulputate. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce non ultrices justo. Maecenas dui justo, posuere ut volutpat et, luctus non turpis. Nulla augue odio, porttitor sed ipsum non, eleifend ultricies tellus. Fusce facilisis est in ex mattis tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc ut ante vehicula, viverra nunc et, facilisis ipsum. Duis malesuada est vitae venenatis egestas. Maecenas in scelerisque nunc, luctus tempor mi. Sed urna ligula, efficitur ac iaculis id, hendrerit sed orci.</p>
     </div>
   </body>

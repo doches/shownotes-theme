@@ -31,11 +31,17 @@ body {
 .header h3 {
   font-size: 24px;
   font-family: "Quicksand", "Helvetica", sans-serif;
-  font-weight: 200;
+  font-weight: 400;
+}
+pre {
+  padding: 16px;
+  border-radius: 4px;
+  background-color: #3d3d50;
+  border: 2px solid #54546c;
 }
 .swatch {
-  width: 64px;
-  height: 64px;
+  width: 96px;
+  height: 96px;
   text-align: center;
   float: left;
 }
